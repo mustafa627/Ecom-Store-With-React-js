@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: monospace;
+justify-content: space-around;
+font-size: large;
+margin-top: 10px;
+background-color: black;
+height: 70px;
+color: white;
+}
+
+input{
+    height: 40px;
+    width: 400px;
+    border: 2px solid green;
+    border-radius: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+a:hover{
+    color: green;
+    border-bottom: 1px solid white;
+}
+
+
