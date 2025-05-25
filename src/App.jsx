@@ -1,12 +1,13 @@
-// import { useState } from 'react'
 import React from 'react'
 import Navbar from './navbar/navbar.jsx'
-import Products from './products/products.jsx'
+import GetProducts from './products/products.jsx'
+import  {useState } from "react";
 function App() {
+  const [ searchTerm , setSearchTerm ] = useState("")
   return (
     <>
-    <Navbar />
-    < Products />
+    <Navbar onSearch={(value) =>  setSearchTerm(value)}/>
+    <GetProducts searchTerm={searchTerm}/>
     </>
   )
 }

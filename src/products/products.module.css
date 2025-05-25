@@ -1,43 +1,52 @@
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+ .productList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 16px;
   padding: 16px;
-  max-width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 12px;
+}
+
+.card {
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
-  transition: transform 0.2s ease;
+  padding: 16px;
+  border-radius: 8px;
+  min-height: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .image {
   width: 100%;
   height: 200px;
-  object-fit: cover;
-  border-radius: 6px;
+  object-fit: contain;
   margin-bottom: 12px;
 }
 
 .title {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: bold;
   margin-bottom: 8px;
   color: #333;
 }
 
 .price {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #27ae60;
+  font-size: 16px;
+  font-weight: 600;
+  color: #007BFF;
   margin-bottom: 8px;
 }
 
 .description {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.4;
+  font-size: 14px;
+  color: #555;
+  display: -webkit-box;
+   -webkit-line-clamp: 4; /* show max 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
