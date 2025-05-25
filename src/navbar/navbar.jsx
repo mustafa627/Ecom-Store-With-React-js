@@ -14,6 +14,7 @@ const Navbar = ({ onSearch }) => {
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">PRODUCTS</a>
+        <button className={styles.button}>Login</button>
       </div>
     </div>
 

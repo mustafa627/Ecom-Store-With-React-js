@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+.button{
+    height: 40px;
+    width: 100px;
+    border: 2px solid green;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: large;
+}
+
+.button:hover{
+    background-color: green;
+    color: black;
+    cursor: pointer;
+}
+
 .navbar{
 display: flex;
 justify-content: center;
