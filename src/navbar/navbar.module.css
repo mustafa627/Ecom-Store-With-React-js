@@ -1,7 +1,12 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
 }
 
 .button{
@@ -11,7 +16,6 @@
     border-radius: 20px;
     background-color: black;
     color: white;
-    font-family: monospace;
     font-size: large;
 }
 
@@ -25,7 +29,7 @@
 display: flex;
 justify-content: center;
 align-items: center;
-font-family: monospace;
+ 
 justify-content: space-around;
 font-size: large;
 margin-top: 10px;
@@ -47,7 +51,7 @@ a{
     color: white;
     font-size: 15px;
     padding: 10px;
-    font-family: sans-serif;
+   
 }
 
 a:hover{

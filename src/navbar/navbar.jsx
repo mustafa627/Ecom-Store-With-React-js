@@ -17,7 +17,6 @@ const Navbar = ({ onSearch }) => {
         <div>
           <Link to="/Home">Home</Link>
           <Link to="/products">Products</Link>
-          <Link to="/products/:id">Products</Link>
           <Link to="/About">About</Link>
           <button className={styles.button}>Login</button>
         </div>
